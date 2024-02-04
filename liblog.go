@@ -66,7 +66,7 @@ func LogInfo(message string, info string, color string) {
 	LogColor(
 		fmt.Sprintf("[%.2d:%.2d:%.2d]%[5]s %[4]s::%[5]s %[6]s%[7]s%[5]s %[4]s::%[5]s %[6]s%[8]s",
 			datetime.Hour(), datetime.Minute(), datetime.Second(),
-			Colors["B1"], Colors["CC"], color,
+			Colors["BG_MAGENTA"], Colors["CC"], color,
 			info, message),
 		color,
 	)
@@ -93,7 +93,7 @@ func LogKeyboardInterrupt() {
 		"Keyboard Interrupt\n\n"+
 			"|   Ctrl-C again if not exiting automaticly\n"+
 			"|   Please wait...\n|\n",
-		"INFO", Colors["R1"],
+		"INFO", Colors["BG_WHITE"],
 	)
 }
 
